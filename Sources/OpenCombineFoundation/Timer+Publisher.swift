@@ -9,6 +9,10 @@ import CoreFoundation
 import Foundation
 import OpenCombine
 
+// dgh -- Don't know why but this isn't found by Swift 5.3, probably
+//   a library or compiler bug
+let kCFStringEncodingUTF8 = 0x08000100
+
 extension Timer {
 
     /// Returns a publisher that repeatedly emits the current date on the given interval.
